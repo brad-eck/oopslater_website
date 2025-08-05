@@ -14,27 +14,35 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
+            color: #1a1a1a;
+            background: #ffffff;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         
-        .container {
-            background: white;
-            border-radius: 20px;
-            padding: 3rem;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        .hero {
+            background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+            color: white;
+            padding: 4rem 2rem;
             text-align: center;
-            max-width: 500px;
-            width: 90%;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 3rem;
+            font-weight: 300;
         }
         
         .logo {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             margin: 0 auto 2rem;
             display: flex;
             align-items: center;
@@ -48,74 +56,183 @@
             border-radius: 20px;
         }
         
-        h1 {
-            color: #333;
-            margin-bottom: 1rem;
-            font-size: 2.5rem;
-            font-weight: 700;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
         
-        .subtitle {
+        .content {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        .content p {
+            font-size: 1.2rem;
             color: #666;
             margin-bottom: 3rem;
-            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .links {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.5rem;
+            max-width: 400px;
+            margin: 0 auto;
         }
         
         .link {
             display: block;
-            padding: 1rem 2rem;
-            background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+            padding: 1.5rem 2rem;
+            background: #1a1a1a;
             color: white;
             text-decoration: none;
             border-radius: 12px;
-            font-weight: 600;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(139, 92, 246, 0.3);
+            background: #8B5CF6;
         }
         
-        .description {
-            margin-top: 2rem;
+        .features {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #8B5CF6;
+        }
+        
+        .feature h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        .feature p {
             color: #666;
-            font-size: 0.9rem;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         
-        @media (max-width: 480px) {
-            .container {
-                padding: 2rem;
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
             }
             
-            h1 {
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .content h2 {
                 font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .logo {
+                width: 80px;
+                height: 80px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="AppLogo.png" alt="OopsLater Logo">
+    <div class="hero">
+        <div class="container">
+            <div class="logo">
+                <img src="AppLogo.png" alt="OopsLater Logo">
+            </div>
+            <h1>Your impulses are stealing your life.</h1>
+            <p class="subtitle">Let's take it back.</p>
         </div>
-        <h1>OopsLater</h1>
-        <p class="subtitle">Regret Timer App - Legal Information</p>
-        
-        <div class="links">
-            <a href="privacy-policy.html" class="link">Privacy Policy</a>
-            <a href="terms-of-service.html" class="link">Terms of Service</a>
+    </div>
+    
+    <div class="content">
+        <div class="container">
+            <h2>Legal Information</h2>
+            <p>Transparency matters. Here's everything you need to know about how OopsLater protects your privacy and the terms of our service.</p>
+            
+            <div class="links">
+                <a href="privacy-policy.html" class="link">Privacy Policy</a>
+                <a href="terms-of-service.html" class="link">Terms of Service</a>
+            </div>
         </div>
-        
-        <div class="description">
-            <p>OopsLater helps you make better decisions by adding a thoughtful pause before impulsive actions. All data is stored locally on your device for your privacy.</p>
+    </div>
+    
+    <div class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Your Data Stays Yours</h3>
+                    <p>Everything is stored locally on your device. We never see your personal information.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Control</h3>
+                    <p>Set timers for impulsive decisions and take back control of your choices.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Track Your Progress</h3>
+                    <p>See your decision history and build better habits over time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <p>© 2024 OopsLater. All rights reserved.</p>
         </div>
     </div>
 </body>
