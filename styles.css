@@ -1,9 +1,9 @@
 /* OopsLater Legal Pages - Shared Styles */
 
 :root {
-    --primary-gradient: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
-    --primary-color: #8B5CF6;
-    --secondary-color: #A855F7;
+    --primary-gradient: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+    --primary-color: #F97316;
+    --secondary-color: #EA580C;
     --text-dark: #333;
     --text-medium: #555;
     --text-light: #666;
