@@ -15,10 +15,10 @@ Web/
 ## Pages Overview
 
 ### `index.html`
-- Landing page with OopsLater branding
+- Landing page with OopsLater branding and actual app logo
 - Links to both Privacy Policy and Terms of Service
 - Responsive design that works on mobile and desktop
-- Modern gradient design matching the app's aesthetic
+- Modern purple gradient design matching the app's color scheme
 
 ### `privacy-policy.html`
 - Comprehensive privacy policy emphasizing local data storage
@@ -36,10 +36,11 @@ Web/
 ## Design Features
 
 - **Responsive Design**: Works on all device sizes
-- **Modern UI**: Clean, professional appearance with gradients
+- **Modern UI**: Clean, professional appearance with purple gradients
 - **Accessibility**: Good contrast ratios and readable fonts
-- **Brand Consistency**: Matches the app's visual style
+- **Brand Consistency**: Matches the app's visual style and color scheme
 - **Mobile-First**: Optimized for mobile viewing
+- **App Logo**: Incorporates the actual OopsLater app logo
 
 ## Deployment Options
 
