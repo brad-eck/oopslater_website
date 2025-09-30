@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OopsLater - Legal Information</title>
+    <title>OopsLater</title>
     <style>
         * {
             margin: 0;
@@ -24,6 +24,28 @@
             color: white;
             padding: 4rem 2rem;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('AppLogo.png');
+            background-size: 200px 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
         }
         
         .hero h1 {
@@ -191,8 +213,7 @@
             <div class="logo">
                 <img src="AppLogo.png" alt="OopsLater Logo">
             </div>
-            <h1>Your impulses are stealing your life.</h1>
-            <p class="subtitle">Let's take it back.</p>
+            <h1>OopsLater</h1>
         </div>
     </div>
     
@@ -232,7 +253,7 @@
     
     <div class="footer">
         <div class="container">
-            <p>© 2025 OopsLater. All rights reserved.</p>
+            <p>© 2024 OopsLater. All rights reserved.</p>
         </div>
     </div>
 </body>
